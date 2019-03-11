@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EB1DE15922363FB1004F060C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE15822363FB1004F060C /* AppDelegate.m */; };
-		EB1DE15C22363FB1004F060C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE15B22363FB1004F060C /* ViewController.m */; };
 		EB1DE15F22363FB1004F060C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE15D22363FB1004F060C /* Main.storyboard */; };
 		EB1DE16122363FB3004F060C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE16022363FB3004F060C /* Assets.xcassets */; };
 		EB1DE16422363FB3004F060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE16222363FB3004F060C /* LaunchScreen.storyboard */; };
@@ -20,8 +19,6 @@
 		EB1DE15422363FB1004F060C /* StarWars Search Swift-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWars Search Swift-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1DE15722363FB1004F060C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1DE15822363FB1004F060C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1DE15A22363FB1004F060C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB1DE15B22363FB1004F060C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB1DE15E22363FB1004F060C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1DE16022363FB3004F060C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1DE16322363FB3004F060C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,33 @@
 		EB1DE15622363FB1004F060C /* StarWars Search Swift-ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				EB1DE15722363FB1004F060C /* AppDelegate.h */,
-				EB1DE15822363FB1004F060C /* AppDelegate.m */,
-				EB1DE15A22363FB1004F060C /* ViewController.h */,
-				EB1DE15B22363FB1004F060C /* ViewController.m */,
-				EB1DE15D22363FB1004F060C /* Main.storyboard */,
-				EB1DE16022363FB3004F060C /* Assets.xcassets */,
-				EB1DE16222363FB3004F060C /* LaunchScreen.storyboard */,
+				EB1DE17122364251004F060C /* Resources */,
+				EB1DE17022364242004F060C /* Model */,
 				EB1DE16522363FB3004F060C /* Info.plist */,
-				EB1DE16622363FB3004F060C /* main.m */,
+			);
+			path = "StarWars Search Swift-ObjC";
+			sourceTree = "<group>";
+		};
+		EB1DE17022364242004F060C /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				EB1DE16D22364048004F060C /* LSIPerson.h */,
 				EB1DE16E22364048004F060C /* LSIPerson.m */,
 			);
-			path = "StarWars Search Swift-ObjC";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1DE17122364251004F060C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1DE15D22363FB1004F060C /* Main.storyboard */,
+				EB1DE15722363FB1004F060C /* AppDelegate.h */,
+				EB1DE15822363FB1004F060C /* AppDelegate.m */,
+				EB1DE16222363FB3004F060C /* LaunchScreen.storyboard */,
+				EB1DE16022363FB3004F060C /* Assets.xcassets */,
+				EB1DE16622363FB3004F060C /* main.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1DE15C22363FB1004F060C /* ViewController.m in Sources */,
 				EB1DE16F22364048004F060C /* LSIPerson.m in Sources */,
 				EB1DE16722363FB3004F060C /* main.m in Sources */,
 				EB1DE15922363FB1004F060C /* AppDelegate.m in Sources */,
