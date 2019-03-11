@@ -13,6 +13,7 @@
 		EB1DE16422363FB3004F060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE16222363FB3004F060C /* LaunchScreen.storyboard */; };
 		EB1DE16722363FB3004F060C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE16622363FB3004F060C /* main.m */; };
 		EB1DE16F22364048004F060C /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE16E22364048004F060C /* LSIPerson.m */; };
+		EB1DE17422364542004F060C /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE17322364542004F060C /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		EB1DE16622363FB3004F060C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB1DE16D22364048004F060C /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
 		EB1DE16E22364048004F060C /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
+		EB1DE17222364542004F060C /* StarWars Search Swift-ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWars Search Swift-ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB1DE17322364542004F060C /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		EB1DE15622363FB1004F060C /* StarWars Search Swift-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				EB1DE17522364A3D004F060C /* View Controller */,
 				EB1DE17122364251004F060C /* Resources */,
 				EB1DE17022364242004F060C /* Model */,
 				EB1DE16522363FB3004F060C /* Info.plist */,
@@ -70,6 +74,8 @@
 			children = (
 				EB1DE16D22364048004F060C /* LSIPerson.h */,
 				EB1DE16E22364048004F060C /* LSIPerson.m */,
+				EB1DE17322364542004F060C /* PersonController.swift */,
+				EB1DE17222364542004F060C /* StarWars Search Swift-ObjC-Bridging-Header.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +91,13 @@
 				EB1DE16622363FB3004F060C /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB1DE17522364A3D004F060C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 				TargetAttributes = {
 					EB1DE15322363FB1004F060C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -157,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1DE17422364542004F060C /* PersonController.swift in Sources */,
 				EB1DE16F22364048004F060C /* LSIPerson.m in Sources */,
 				EB1DE16722363FB3004F060C /* main.m in Sources */,
 				EB1DE15922363FB1004F060C /* AppDelegate.m in Sources */,
@@ -301,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "StarWars Search Swift-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +325,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iyinraphael.StarWars-Search-Swift-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarWars Search Swift-ObjC/Model/StarWars Search Swift-ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "StarWars Search Swift-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +345,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iyinraphael.StarWars-Search-Swift-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarWars Search Swift-ObjC/Model/StarWars Search Swift-ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
